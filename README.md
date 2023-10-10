@@ -2,10 +2,11 @@
 
 Este proyecto incluye dos servicios fundamentales para un sistema distribuido: un servicio de nomenclatura (Naming Node) y un servicio de almacenamiento (Storage Node).
 
-# Autor
+# Autores
 
 Tomás Duque
-La mona
+Felipe Ortiz
+David Ruiz
 
 # Características Generales
 
@@ -65,13 +66,17 @@ Nota: Ambos endpoints requieren la subida de un archivo con el nombre "file".
 ## Naming Node
 
 `main.js`: Archivo principal que inicia el servicio, establece la configuración y arranca el servidor.
+
 `server.js`: Configuración del servidor Express y definición de los endpoints.
+
 `startup.js`: Lógica para la inicialización y sincronización con otros nodos de nomenclatura al arrancar el servicio.
 
 ## Storage Node
 
 `main.js`: Archivo principal del nodo de almacenamiento.
+
 `server.js`: Configuración del servidor Express para el nodo de almacenamiento, incluyendo la lógica de manejo de archivos.
+
 `startup.js`: Lógica inicial del nodo de almacenamiento al arrancar.
 
 # Manejo de Archivos
