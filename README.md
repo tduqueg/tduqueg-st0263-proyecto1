@@ -10,12 +10,12 @@ Este proyecto incluye dos servicios fundamentales para un sistema distribuido: u
 
 # Características Generales
 
-Configuración a través de archivos .env y config.json.
-API REST para buscar, crear, actualizar y obtener información sobre nodos y recursos.
-Inicialización del sistema con sincronización con otros nodos de nomenclatura (Naming Node).
-Soporte para subida y actualización de archivos a través de la librería multer.
-Manejo integrado de errores con mensajes personalizados.
-Funcionalidad para evitar sobrescribir archivos existentes.
+- Configuración a través de archivos .env y config.json.
+- API REST para buscar, crear, actualizar y obtener información sobre nodos y recursos.
+- Inicialización del sistema con sincronización con otros nodos de nomenclatura (Naming Node).
+- Soporte para subida y actualización de archivos a través de la librería multer.
+- Manejo integrado de errores con mensajes personalizados.
+- Funcionalidad para evitar sobrescribir archivos existentes.
 
 # Cómo empezar
 
