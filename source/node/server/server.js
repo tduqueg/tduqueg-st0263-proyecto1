@@ -8,7 +8,7 @@ dotenv.config({ path: path.join(__dirname, "../../../.env") });
 
 const manager = require(path.join(__dirname, "../../grpc/manager"));
 const createFile = require(path.join(__dirname, "./utils/create"));
-const fileSystem = require(path.join(__dirname, "./utils/fileSystem"));
+const fileSystem = require(path.join(__dirname, "../utils/fileSystem"));
 
 async function getServer() {
   console.info("Iniciando el nodo...");
