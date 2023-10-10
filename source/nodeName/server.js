@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const findController = require("./controllers/findController");
+const findController = require("./controllers/find");
 const systemController = require("./controllers/systemController");
 
 function server(port, host, config) {
