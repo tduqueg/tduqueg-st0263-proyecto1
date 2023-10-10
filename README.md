@@ -88,4 +88,4 @@ Nota: Ambos endpoints requieren la subida de un archivo con el nombre "file".
 
 # Manejo de Archivos
 
-El sistema utiliza multer para gestionar la subida y actualización de archivos. Estos se almacenan en la carpeta ./files en la raíz del proyecto. Al intentar subir un archivo con un nombre que ya existe, el sistema devolverá un error informando que el archivo ya existe.
+El sistema utiliza multer para gestionar la subida y actualización de archivos. Estos se almacenan en la carpeta `./files` en la raíz del proyecto. Al intentar subir un archivo con un nombre que ya existe, el sistema devolverá un error informando que el archivo ya existe.
