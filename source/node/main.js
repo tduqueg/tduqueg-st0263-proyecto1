@@ -2,8 +2,7 @@ const dotenv = require("dotenv");
 const path = require("path");
 const fs = require("fs").promises;
 const { server } = require("./server");
-const { grpc } = require("./grpc");
-
+const { startup } = require("./startup");
 dotenv.config({ path: path.join(__dirname, "../.env") });
 const configPath = path.join(__dirname, "./config.json");
 const host = process.env.STORAGE_HOST;
