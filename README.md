@@ -4,9 +4,9 @@ Este proyecto incluye dos servicios fundamentales para un sistema distribuido: u
 
 # Autores
 
-Tomás Duque
-Felipe Ortiz
-David Ruiz
+- Tomás Duque
+- Felipe Ortiz
+- David Ruiz
 
 # Características Generales
 
@@ -48,36 +48,43 @@ node main.js
 
 ### Naming Node
 
-`GET /find`: Endpoint para buscar.
-`GET /resource`: Endpoint para crear un recurso.
-`PUT /resource`: Endpoint para actualizar un recurso.
-`GET /health`: Endpoint para verificar la salud del nodo.
-`GET /hashmap`: Endpoint para obtener el hashmap completo del sistema.
-`GET /ls`: Endpoint para listar todos los nodos.
+- `GET /find`: Endpoint para buscar.
+
+- `GET /resource`: Endpoint para crear un recurso.
+
+- `PUT /resource`: Endpoint para actualizar un recurso.
+
+- `GET /health`: Endpoint para verificar la salud del nodo.
+
+- `GET /hashmap`: Endpoint para obtener el hashmap completo del sistema.
+
+- `GET /ls`: Endpoint para listar todos los nodos.
 
 ### Storage Node
 
-`POST /resource`: Endpoint para subir un nuevo archivo al nodo de almacenamiento.
-`PUT /resource`: Endpoint para actualizar un archivo existente.
+- `POST /resource`: Endpoint para subir un nuevo archivo al nodo de almacenamiento.
+
+- `PUT /resource`: Endpoint para actualizar un archivo existente.
+
 Nota: Ambos endpoints requieren la subida de un archivo con el nombre "file".
 
 # Estructura del Proyecto
 
 ## Naming Node
 
-`main.js`: Archivo principal que inicia el servicio, establece la configuración y arranca el servidor.
+- `main.js`: Archivo principal que inicia el servicio, establece la configuración y arranca el servidor.
 
-`server.js`: Configuración del servidor Express y definición de los endpoints.
+- `server.js`: Configuración del servidor Express y definición de los endpoints.
 
-`startup.js`: Lógica para la inicialización y sincronización con otros nodos de nomenclatura al arrancar el servicio.
+- `startup.js`: Lógica para la inicialización y sincronización con otros nodos de nomenclatura al arrancar el servicio.
 
 ## Storage Node
 
-`main.js`: Archivo principal del nodo de almacenamiento.
+- `main.js`: Archivo principal del nodo de almacenamiento.
 
-`server.js`: Configuración del servidor Express para el nodo de almacenamiento, incluyendo la lógica de manejo de archivos.
+- `server.js`: Configuración del servidor Express para el nodo de almacenamiento, incluyendo la lógica de manejo de archivos.
 
-`startup.js`: Lógica inicial del nodo de almacenamiento al arrancar.
+- `startup.js`: Lógica inicial del nodo de almacenamiento al arrancar.
 
 # Manejo de Archivos
 
