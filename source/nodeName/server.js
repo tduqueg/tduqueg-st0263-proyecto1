@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const resourceController = require("./controllers/resourceController");
 const findController = require("./controllers/find");
 const systemController = require("./controllers/systemController");
 

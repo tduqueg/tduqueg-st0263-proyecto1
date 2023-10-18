@@ -27,7 +27,7 @@ npm install
 
 # Configuración:
 
-Crear o editar el archivo .env en la raíz del proyecto con las siguientes variables:
+Crear o editar el archivo `.env` en la raíz del proyecto con las siguientes variables:
 
 ```env
 NAMING_NODE_PORT=3000
@@ -36,7 +36,7 @@ STORAGE_PORT=3001
 STORAGE_HOST=localhost
 ```
 
-Configurar el archivo config.json con la información relevante de los nodos de almacenamiento y nodos de nomenclatura.
+Configurar el archivo `config.json` con la información relevante de los nodos de almacenamiento y nodos de nomenclatura.
 
 Ejecutar el servicio:
 
