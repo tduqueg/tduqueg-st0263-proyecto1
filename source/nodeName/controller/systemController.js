@@ -5,8 +5,9 @@ module.exports = {
     res.json({ status: "UP" });
   },
 
-  hashmap: (req, res) => {
-    res.json(storage.getEntireMap());
+  getCurrentHashMap: (req, res) => {
+    const storageMap = storage.getEntireMap();
+    res.json(storageMap);
   },
 
   ls: (req, res) => {
@@ -16,6 +17,15 @@ module.exports = {
     } catch (error) {
       console.error("Error en el ls", error);
       res.status(500).json({ error: "Error interno en el servidor" });
+    }
+  },
+  getAllFiles: (req, res) => {
+    try {
+      const allFiles = storage.getAllFiles();
+      res.json(allFiles);
+    } catch (error) {
+      console.error("Error in getAllFiles:", error);
+      res.status(500).json({ error: "Internal Server Error" });
     }
   },
 };
