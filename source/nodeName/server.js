@@ -18,7 +18,7 @@ function server(port, host, config) {
   app.post("/resource", resourceController.create);
   app.put("/resource", resourceController.update);
   app.get("/health", systemController.health);
-  app.get("/hashmap", systemController.hashmap);
+  app.get("/hashmap", systemController.getCurrentHashMap);
   app.get("/ls", systemController.ls);
 
   app.listen(port, () => {
