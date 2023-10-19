@@ -2,7 +2,7 @@ const req = require("express/lib/request");
 const storage = require("../utils/storage");
 
 module.exports = {
-  createResource: (req, res) => {
+  create: (req, res) => {
     try {
       const fileName = req.query.fileName;
       const storageMap = req.storageMap;
@@ -34,7 +34,7 @@ module.exports = {
     }
   },
 
-  updateResource: (req, res) => {
+  update: (req, res) => {
     try {
       const fileName = req.query.fileName;
       const storageMap = req.storageMap;

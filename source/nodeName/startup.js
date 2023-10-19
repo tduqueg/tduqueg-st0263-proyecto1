@@ -1,5 +1,5 @@
 const axios = require("axios");
-const storage = require("../utils/storage");
+const storage = require("./utils/storage");
 const e = require("express");
 
 function startup(config) {

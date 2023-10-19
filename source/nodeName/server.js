@@ -1,8 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const resourceController = require("./controllers/resourceController");
-const findController = require("./controllers/find");
-const systemController = require("./controllers/systemController");
+const resourceController = require("./controller/resourceController");
+const findController = require("./controller/find");
+const systemController = require("./controller/systemController");
 
 function server(port, host, config) {
   const app = express();
@@ -15,7 +15,7 @@ function server(port, host, config) {
   });
 
   app.get("/find", findController.find);
-  app.get("/resource", resourceController.create);
+  app.post("/resource", resourceController.create);
   app.put("/resource", resourceController.update);
   app.get("/health", systemController.health);
   app.get("/hashmap", systemController.hashmap);
