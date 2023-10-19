@@ -1,7 +1,7 @@
 const fs = require("fs");
 const crypto = require("crypto");
 const path = require("path");
-const storageFilePath = path.join(__dirname, "storage.json");
+const storageFilePath = path.join(__dirname, "storageMap.json");
 
 function hashName(name) {
   return crypto.createHash("sha256").update(name).digest("hex");

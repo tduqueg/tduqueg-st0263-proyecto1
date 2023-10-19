@@ -3,7 +3,7 @@ const protoLoader = require("@grpc/proto-loader");
 const path = require("path");
 const dotenv = require("dotenv");
 
-dovtenv.config({ path: path.join(__dirname, "../../../.env") });
+dotenv.config({ path: path.join(__dirname, "../../../.env") });
 
 const manager = require(path.join(__dirname, "../../grpc/manager"));
 const createFile = require(path.join(__dirname, "./utils/create"));

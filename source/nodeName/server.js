@@ -15,8 +15,8 @@ function server(port, host, config) {
   });
 
   app.get("/find", findController.find);
-  app.post("/resource", resourceController.create);
-  app.put("/resource", resourceController.update);
+  app.post("/file", resourceController.create);
+  app.put("/file", resourceController.update);
   app.get("/health", systemController.health);
   app.get("/hashmap", systemController.getCurrentHashMap);
   app.get("/ls", systemController.ls);

@@ -15,7 +15,7 @@ module.exports = {
 
       if (storageNodes.lenght === 0) {
         return res
-          .status(500)
+          .status(400)
           .json({ message: "No hay nodos de almacenamiento" });
       }
 
